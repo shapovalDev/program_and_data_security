@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(54, 45, 87);
+  font-family: "Outfit", sans-serif;
+}
+
+.loader-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 48px;
+  cursor: default;
+}
+
+.loader:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  animation: ellipsis steps(4, end) 2000ms infinite;
+  content: "..."; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 54px;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
+.chat-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-wrapper {
+  display: flex;
+  flex: 0 0 100px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.topbar-content {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 100%;
+}
+
+.key {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.exchange-button-wrapper {
+  flex: 0 0 auto;
+  max-width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.exchange-button {
+  text-align: center;
+  background-color: rgba(113, 34, 177, 0.1);
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: rgb(180, 180, 180);
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.desc {
+  font-size: 14px;
+  color: rgb(209, 209, 209);
+}
+
+.users-wrapper {
+  width: 100%;
+  display: flex;
+  margin: 8px 0;
+}
+
+.user-content {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 19px;
+  cursor: pointer;
+  color: rgb(199, 199, 199);
+  font-weight: 600;
+}
+
+.user-checkbox {
+  margin-right: 5px;
+}
+
+.chatlist-wrapper {
+  flex: 1 1 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+}
+
+.chatlist {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.chatlist::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chatlist::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.chatlist::-webkit-scrollbar-thumb {
+  background: rgb(236, 236, 236);
+  border-radius: 5px;
+}
+
+.chatlist::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.message-place {
+  margin: 8px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-bubble {
+  max-width: 70%;
+  background: linear-gradient(
+    90deg,
+    rgb(100, 36, 160) 0%,
+    rgb(74, 13, 216) 100%
+  );
+  word-wrap: break-word;
+  padding: 15px 20px;
+  border-radius: 0 10px 10px 10px;
+  color: #fff;
+  box-shadow: 5px 3px 10px rgba(14, 129, 241, 0.1);
+}
+
+.self {
+  color: #000;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 10px;
+  box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.02);
+}
+
+.message-bubble__name {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.message-bubble__time {
+  padding: 5px 10px;
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+}
+
+.system-message-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
+
+.system-message-bubble {
+  color: rgb(214, 211, 211);
+  background-color: rgba(190, 132, 132, 0.05);
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.02);
+}
+
+.input-wrapper {
+  flex: 0 0 80px;
+  display: flex;
+}
+
+.input-content {
+  height: calc(100% - 2px);
+  width: 100%;
+  margin: 0 60px;
+  border-top: 2px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .chatlist-wrapper {
+    padding: 0 20px;
+  }
+
+  .input-content {
+    margin: 0 20px;
+  }
+}
+
+.input__input {
+  height: 100%;
+  flex: 1 1 100%;
+  padding: 0 20px;
+}
+
+input {
+  height: calc(100% - 2px);
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 5px !important;
+  outline: none;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  color: #000;
+}
+
+input::placeholder {
+  font-family: "Outfit", sans-serif;
+  color: rgb(134, 134, 134);
+}
+
+.input__button {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 35px;
+}
+
+.button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgb(100, 36, 160) 0%,
+    rgb(74, 13, 216) 100%
+  );
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 5px 3px 10px rgba(59, 6, 119, 0.3);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.input__button .button svg {
+  margin-left: -2px;
+  margin-top: 2px;
+}
+
+.greeting-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-content {
+  padding: 30px 20px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  margin: 10px 20px;
+}
+
+.greeting-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting-body__heading {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.greeting-body__main {
+  text-align: center;
+}
+
+.greeting-body__main button {
+  font-family: "Outfit", sans-serif;
+  height: 50px;
+  width: 80%;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(100, 36, 160) 0%,
+    rgb(74, 13, 216) 100%
+  );
+  padding: 0;
+  cursor: pointer;
+}
+
+.greeting-body__main input {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  width: calc(80% - 20px);
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.greeting-body__main input::placeholder {
+  color: rgb(240, 233, 233);
+}
