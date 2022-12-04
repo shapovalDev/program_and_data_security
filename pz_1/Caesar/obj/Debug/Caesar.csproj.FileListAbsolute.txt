@@ -1,0 +1,7 @@
+C:\Users\38066\source\repos\Caesar\Caesar\bin\Debug\Caesar.exe.config
+C:\Users\38066\source\repos\Caesar\Caesar\bin\Debug\Caesar.exe
+C:\Users\38066\source\repos\Caesar\Caesar\bin\Debug\Caesar.pdb
+C:\Users\38066\source\repos\Caesar\Caesar\obj\Debug\Caesar.csprojAssemblyReference.cache
+C:\Users\38066\source\repos\Caesar\Caesar\obj\Debug\Caesar.csproj.CoreCompileInputs.cache
+C:\Users\38066\source\repos\Caesar\Caesar\obj\Debug\Caesar.exe
+C:\Users\38066\source\repos\Caesar\Caesar\obj\Debug\Caesar.pdb
