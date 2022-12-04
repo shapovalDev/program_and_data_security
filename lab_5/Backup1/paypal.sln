@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E:\...\paypal\", ".", "{BA79335E-A28B-461E-834E-D811AC4EC7DC}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/paypal"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\paypal\paypal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\paypal\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/paypal"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\paypal\paypal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\paypal\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1372"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA79335E-A28B-461E-834E-D811AC4EC7DC}.Debug|.NET.ActiveCfg = Debug|.NET
+		{BA79335E-A28B-461E-834E-D811AC4EC7DC}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

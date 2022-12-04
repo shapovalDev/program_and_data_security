@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<Carts>
+  <Cart rec_id="0" cart_id="1" item_id="1" price="2.00" quantity="1" />
+  <Cart rec_id="1" cart_id="1" item_id="1" price="2.00" quantity="1" />
+  <Cart rec_id="5" cart_id="4" item_id="1" price="2.00" quantity="1" />
+  <Cart rec_id="6" cart_id="5" item_id="2" price="3.00" quantity="1" />
+  <Cart rec_id="7" cart_id="1" item_id="1" price="2.00" quantity="1" />
+  <Cart rec_id="8" cart_id="1" item_id="2" price="3.00" quantity="1" />
+  <Cart rec_id="9" cart_id="1" item_id="2" price="3.00" quantity="1" />
+  <Cart rec_id="10" cart_id="1" item_id="1" price="2.00" quantity="1" />
+  <Cart rec_id="11" cart_id="1" item_id="2" price="3.00" quantity="1" />
+  <Cart rec_id="12" cart_id="1" item_id="0" price="1.99" quantity="1" />
+  <Cart rec_id="13" cart_id="1" item_id="1" price="2.00" quantity="1" />
+  <Cart rec_id="14" cart_id="1" item_id="2" price="3.00" quantity="1" />
+  <Cart rec_id="15" cart_id="1" item_id="1" price="2.00" quantity="1" />
+</Carts>
